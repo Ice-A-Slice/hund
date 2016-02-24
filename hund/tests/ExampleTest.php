@@ -16,4 +16,10 @@ class ExampleTest extends TestCase
         $this->visit('/')
              ->see('Laravel 5');
     }
+
+    public function testAboutPage()
+    {
+        $this->visit('/about')
+            ->see('about');
+    }
 }

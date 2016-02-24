@@ -15,6 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/admin', function () {
+    return view('backend/home');
+});
+
+Route::get('/about', 'AboutController@index');
+
+Route::get('/patterns', 'PatternsController@index');
+Route::get('/patterns/{pattern}', 'PatternsController@show');
+Route::post('/patterns', 'PatternsController@store');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes

@@ -1,0 +1,1 @@
+{"version":3,"sources":["file.js"],"names":[],"mappings":";;AAAA,IAAA,QAAA,CAAA,OAAA,EAAA,MAAA,CAAA;;AAEA,MAAA,OAAA,CAAA;SAAA,MAAA,IAAA;CAAA,CAAA","file":"file.js","sourcesContent":["var names = ['arnar', 'emma'];\n\nnames.forEach(name => alert(name));\n"],"sourceRoot":"/source/"}

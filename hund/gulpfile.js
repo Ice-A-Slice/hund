@@ -12,5 +12,16 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('app.scss')
+    .sass('backend/app.scss', 'public/css/backend')
+    .browserify([
+        'app.js',
+        'two.js'
+    ], 'public/js/app.js')
+    .version([
+        'css/backend/app.css',
+        'css/app.css',
+        'js/app.js'
+    ])
+    .browserSync({proxy: 'hund.app'});
 });
